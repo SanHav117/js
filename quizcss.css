@@ -1,0 +1,66 @@
+html{
+    background-image: url(https://r1.ilikewallpaper.net/ipad-air-wallpapers/download/33511/Curve-Blue-Green-Pattern-ipad-air-wallpaper-ilikewallpaper_com.jpg);
+    background-size: cover;
+}
+body{
+    margin: 9%;
+}
+#main{
+    border-radius: 3rem;
+    padding: 2%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: darkgreen;
+    text-align: center;
+    color: white;
+    box-shadow: 0.4rem 0.4rem 0rem 0.2rem black;
+}
+#head1{
+    font-size: 4rem;
+    font-family: 'Play', sans-serif;
+    font-weight: 800;
+    color: transparent;
+    background-image: linear-gradient(90deg,red,rgb(236, 133, 133),red);
+    -webkit-background-clip: text;
+}
+#head2{
+    font-size: 2rem;
+    font-family: 'Play', sans-serif;
+    font-weight: 600;
+    color: transparent;
+    background-image: linear-gradient(90deg,rgb(0, 89, 255),rgb(158, 183, 230),rgb(0, 89, 255));
+    -webkit-background-clip: text;
+}
+
+.select{
+    font-size: 3rem;
+    font-family: 'Play', sans-serif;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-items: space-around;
+    align-items: space-around;
+}
+
+.row1 > td, .row2 > td{
+    color: rgb(255, 255, 255);
+    width: 35rem;
+    height: 10rem;
+    -webkit-text-stroke: 2px #000000;
+}
+
+.row1 > td:hover, .row2 > td:hover{
+    background-color: rgb(0, 90, 0);
+    text-decoration: none;
+}
+a{
+    text-decoration: underline darkgreen;
+    color: rgb(255, 255, 255);
+    width: 35rem;
+    height: 10rem;
+    text-decoration: none;
+    -webkit-text-stroke: 2px #000000;
+}
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RNG Game</title>
+</head>
+
+<body style="margin-left: 5%;">
+
+    <h1>Number Guessing Game!</h1>
+
+    <h3>
+        Rules:-<br>
+        1. Guess the whole from between 1 to 10.<br>
+        2. You have 3 attempts.<br><br>
+        GOO!!
+    </h3>
+
+    <input id="guess" type="text">
+    <br>
+    <button id="submit" onclick="myFunction()">Lucky or Not?</button>
+    <br>
+    <button id="reset" onclick="myFunction2()">Reset</button>
+    <br>
+
+    <img id="cookie" style="height: 20rem; opacity: 0; "
+        src="https://assets.bonappetit.com/photos/5ca534485e96521ff23b382b/1:1/w_2560%2Cc_limit/chocolate-chip-cookie.jpg">
+
+
+
+    <script>
+
+        var ans = Math.floor((Math.random() * 10) + 1);
+
+        console.log("ans = " + ans);
+
+
+        let i = 2;
+        console.log("left attempts = " + i);
+
+
+        function myFunction() {
+
+                if (i > 0) {
+
+                    if (ans == document.getElementById('guess').value) {
+                        document.getElementById('cookie').style.opacity = "1";
+                        alert("Correct!! have a cookie :)");
+                        return;
+                    }
+                    else {
+                        i--;
+                        console.log("left attempts " + i);
+                        if (ans > document.getElementById('guess').value) {
+                            alert("try again. Your answer is smaller than the number");
+                            return;
+                        }
+                        if (document.getElementById('guess').value > ans) {
+                            alert("try again. Your answer is greater than the number");
+                            return;
+                        }
+                    }
+                }
+                else {
+                    alert("LMAOOOO better luck next time!");
+                }
+            }
+        
+        
+
+        function myFunction2() {
+            i = i - i + 3;
+            var ans = Math.floor((Math.random() * 10) + 1);
+
+            console.log("ans = " + ans);
+            console.log("left attempts = " + i);
+        }
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
